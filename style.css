@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Outfit',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:white;
+}
+ header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 10;
+ }
+ .title{
+    font-size:2rem;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    /*margin-right: 270px;*/
+ }
+ 
+ .navigation a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    padding:6px 15px;
+    border-radius: 20px;
+    margin:0 10px;
+    font-weight: 600;
+ }
+ .navigation a:hover {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0) ;
+ }
+ .caption{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: #f9f9f9;
+ }
+ .caption> img{
+    height: 100vh;
+    width: 100vw;  
+    filter: brightness(100%);
+ }
+.caption > .text{
+   position: absolute;
+   margin: 0 auto;
+   left: 0;
+   right: 0;        
+   text-align: center;
+   top: 20%;
+   color:rgb(0, 0, 0);
+   width: 30%;  
+   -webkit-backdrop-filter: blur(8px);
+   backdrop-filter: blur(8px);          
+}
+.text > h4{
+   font-size:3rem; 
+   font-family:Georgia,serif;
+}
+.text > h5{
+   font-size: 1rem;
+   font-family:Arial,sans-serif;  
+}
+.destinations{
+   display: flex;
+   flex-direction: column; 
+   padding: 20px; 
+}
+.destinations > h4{
+   font-size: 2rem;
+   font-family: 'Segoe UI', sans-serif;
+   color:rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+   display: flex;
+   margin-top: 20px;
+}
+.card{
+   height:25rem;
+   width: 20rem;
+   margin: 0px 10px 30px 45px;
+   box-shadow: 2px 2px 8px black;
+}
+.card > img{
+   height:25rem;
+   width: 20rem;
+   border-radius: 2px;  
+}
+.details{
+   height: 5rem;
+   width: 20rem;
+}
+.details > h2{
+   margin :10px;
+   font-size :20px;
+   font-family:'Lucida Sans',sans-serif;
+   color:rgb(0, 0, 0);
+}
+.about{ 
+   margin-top: 40px;
+   display: flex;
+   padding: 70px 0px 100px;
+   justify-content: center;
+   flex-direction: column;
+   background-color:rgb(242,238,232);
+}
+.about > h4{
+   font-size: 2rem;
+   font-family: 'Segoe UI', sans-serif;
+   color:rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+}
+h4 > span{
+   font-size: 2rem;
+   font-family: 'Segoe UI', sans-serif;
+   color:coral;
+   margin-left:5px;
+   margin-top: 1px;
+}
+.box {
+   display: flex;
+   flex-direction: row;
+   margin-top: 2rem;
+   margin-left: 5rem;
+}
+.box .pic > img{
+   height: 25rem;
+   width: 30rem;
+   border-radius: 5px;
+
+}
+.data{
+   margin-left: 5rem;
+}
+.data > h1{
+   font-size: 2rem;
+   font-family:'Gill Sans MT', Calibri;
+   font-weight: 100;
+   color:rgb(0, 0, 0);
+   margin-top: 1rem;   
+}
+.data > p{
+   font-size:1rem;
+   font-weight: 100;
+   color:rgb(0, 0, 0);
+   margin-top: 2rem;
+   margin-right: 8rem;
+   line-height: 2.0;
+}
+.data button{
+   margin-top: 1rem;
+   height: 2rem;
+   width: 10rem;
+   border:none;
+   border-radius: 2px;
+   letter-spacing: 2px;
+   background-color: coral;
+   color:white;
+   cursor: pointer;  
+}
+
+.contact{
+   box-sizing: border-box;
+   position: absolute;
+   padding: 50px 0px 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(0, 0, 0);
+   color:white;
+   width: 100vw;
+}
+.contact  > h2{
+   font-size: 2rem;
+   padding: 0px 0px 20px;
+   font-family: 'Segoe UI', sans-serif;
+}
+.contact-details {
+   display: flex;
+}
+.contact-details .contactInfo{
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-start;
+   margin-right: 30rem;
+   margin-left: 5rem;
+   
+   line-height: 1.5;
+}
+.contactInfo > h2{
+   font-size:20px;
+}
+.contactInfo > p{
+   font-size: 15px;
+   font-weight: 200;
+}
+.contactInfo .social-links{
+   display: flex;
+   flex-direction: row;
+   margin-top: 1rem;
+}
+.social-links a{
+   color:white;
+   padding-right:40px;
+}
+
+.contactform{
+   display: flex;
+   line-height: 1.5;
+   flex-direction: column;
+   width: 50%;
+}
+.contactform > h2{
+   font-size:20px;
+}
+.contactform .inputbox{
+   display: flex;
+   flex-direction: column;
+}
+.contactform .inputbox > h2{
+   font-size:18px;
+   font-weight: 100;
+}
+.contactform .inputbox > button{
+   margin-top: 10px;
+   width: 20%;
+   font-weight: 600;  
+}
+
